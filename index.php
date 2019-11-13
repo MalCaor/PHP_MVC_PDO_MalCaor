@@ -38,6 +38,7 @@
 				$site->affiche();
 				break;
 		case 'connexion' :
+			$site->js='connection';
 			$site->js='all';
 			$site->css='all';
 			$site->titre='Connexion';
