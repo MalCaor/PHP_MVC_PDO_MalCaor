@@ -2,13 +2,17 @@
  * Font Awesome Free 5.4.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
+ $(document).ready(function() {
+   // Disable the slider
+   $("#slider").css('display', 'none');
+ 	} );
 (function () {
 'use strict';
 
 var _WINDOW = {};
 try {
   if (typeof window !== 'undefined') _WINDOW = window;
-  
+
 } catch (e) {}
 
 var _ref = _WINDOW.navigator || {};
@@ -517,7 +521,7 @@ bunker(function () {
 var _WINDOW = {};
 try {
   if (typeof window !== 'undefined') _WINDOW = window;
-  
+
 } catch (e) {}
 
 var _ref = _WINDOW.navigator || {};
@@ -790,7 +794,7 @@ bunker(function () {
 var _WINDOW = {};
 try {
   if (typeof window !== 'undefined') _WINDOW = window;
-  
+
 } catch (e) {}
 
 var _ref = _WINDOW.navigator || {};

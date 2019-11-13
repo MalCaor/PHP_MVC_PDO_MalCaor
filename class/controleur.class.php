@@ -172,27 +172,9 @@ public function affiche_info_ville(){
 	return $vretour;
 }
 
-/*public function ol_map(){
-	$vretour = '<head>
-  		<meta charset="UTF-8">
-    		<script src="ol/v6.1.1-dist/ol.js"></script>
-		<link rel="stylesheet" href="ol/v6.1.1-dist/ol.css">
-    		<style>
-      			.map {
-        				height: 400px;
-        				width: 100%;
-      			}
-    		</style>
-   		<script >
-
-    		</script>
-    		<title>Merci OpenStreetMap</title>
-  	</head>
-  	<body onload="init(-1.553621,47.218371);">
-    		<h2>Ville</h2>
-   		 <div id="map" class="map"></div>
- </body>';
- return $vretour;
-}*/
+// Connexion
+public function retourne_formulaire_login(){
+	
+}
 }
 ?>

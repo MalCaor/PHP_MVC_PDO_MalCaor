@@ -38,6 +38,8 @@
 				$site->affiche();
 				break;
 		case 'connexion' :
+			$site->js='all';
+			$site->css='all';
 			$site->titre='Connexion';
 			$site->js='jquery.validate.min';
 			$site->js='messages_fr';
