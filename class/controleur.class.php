@@ -194,7 +194,7 @@ public function retourne_formulaire_login(){
 								<label for="mp"><span class="fas fa-eye"></span> Mot de passe</label>
 								<input type="password" class="form-control" id="mp" name="mp" placeholder="Mot de passe">
 							</div>
-							<div class="form-group">
+							<div class="form-group" name="radioLog">
 								<label class="radio-inline"><input type="radio" name="rblogin" id="rbj" value="rbj">Journaliste</label>
 								<label class="radio-inline"><input type="radio" name="rblogin" id="rbr" value="rbr">Rédacteur en chef</label>
 								<label class="radio-inline"><input type="radio" name="rblogin" id="rba" value="rba">Administrateur</label>

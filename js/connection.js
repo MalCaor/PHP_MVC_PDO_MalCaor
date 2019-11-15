@@ -22,8 +22,6 @@ $( document ).ready(function() {
   });
   $("#login").submit(function( e ){
     e.preventDefault();
-    console.log("Je suis log");
-    alert("submit");
     if($("#login").valid()){
       alert("ok");
     }
