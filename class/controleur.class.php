@@ -180,7 +180,7 @@ public function retourne_formulaire_login(){
 				<div class="modal-content">
 					<div class="modal-header">
         				<h4 class="modal-title"><span class="fas fa-lock"></span> Formulaire de connexion</h4>
-        				<button type="button" class="close" data-dismiss="modal" aria-label="Close" ">
+        				<button type="button" onClick="hd();" class="close" data-dismiss="modal" aria-label="Close" ">
           					<span aria-hidden="true">&times;</span>
         				</button>
       				</div>
@@ -203,7 +203,7 @@ public function retourne_formulaire_login(){
 						</form>
 					</div>
 					<div class="modal-footer">
-						<button type="button"  class="btn btn-danger btn-default pull-left" data-dismiss="modal" ><span class="fas fa-times"></span> Cancel</button>
+						<button type="button" onClick="hd();"  class="btn btn-danger btn-default pull-left" data-dismiss="modal" ><span class="fas fa-times"></span> Cancel</button>
 					</div>
 				</div>
 			</div>
