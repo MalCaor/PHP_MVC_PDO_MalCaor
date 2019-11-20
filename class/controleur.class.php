@@ -239,5 +239,40 @@ public function retourne_formulaire_login(){
 		';
 		return $retour;
 	}
+
+	//retourne tous les articles des journalistes
+	public function retourne_article_journalist(){
+		$retour='<script>$(document).ready(function() {$("#tart").dataTable();} )</script>
+						<div class="table-responsive">
+						<table id="tart" class="table table-striped table-bordered" cellspacing="0" >
+						<thead><tr>
+							<th>Titre article</th>
+							<th>Page</th>
+							<th>Date deb</th>
+							<th>Date fin</th>
+							<th></th>
+						</tr></thead><tbody>';
+	  $result = $this->vpdo->liste_article_journaliste();
+		if ($result != false) {
+			while ( $row = $result->fetch ( PDO::FETCH_OBJ ) )
+			// parcourir chaque ligne sélectionnée
+			{
+				$retour = $retour . '
+				<tr>
+					<td>'.$row->h3.'</td>
+					<td>'.$row->title.'</td>
+					<td>'.$row->date_deb.'</td>
+					<td>'.$row->date_fin.'</td>
+					<td style="text-align: center;">
+					<button type="button"" class="btn btn-primary btn-default pull-center" onclick="modif_article('.$row->id.');">
+					<span class=" fas fa-edit "></span>
+					</button></td>
+				</tr>';
+			}
+
+		}
+		$retour = $retour .'</tbody></table></div>';
+		return $retour;
+	}
 }
 ?>
