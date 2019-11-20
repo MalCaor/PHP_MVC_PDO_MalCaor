@@ -139,5 +139,19 @@ class mypdo extends PDO{
     	return null;
     }
 
+    public function liste_article_journaliste()
+    {
+
+    	$requete='select a.id,a.h3,a.date_deb,a.date_fin,p.title from article a,page p,salarie s where a.salarie=s.id and a.page=p.id and s.login="'.$_SESSION['id'].'" and s.grade='.$_SESSION['type'].' order by a.h3;';
+
+    	$result=$this->connexion ->query($requete);
+    	if ($result)
+
+    	{
+    		return ($result);
+    	}
+    	return null;
+    }
+
 }
 ?>

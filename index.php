@@ -37,6 +37,9 @@
 				//$site-> left_sidebar=$controleur->ol_map();
 				$site->affiche();
 				break;
+		case 'article':
+				$site-> left_sidebar=$controleur->retourne_article_journalist();
+				break;
 		case 'connexion' :
 			$site->js='connection';
 			$site->js='all';

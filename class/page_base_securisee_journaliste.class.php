@@ -26,7 +26,7 @@ class page_base_securisee_journaliste extends page_base {
 		<?php
 		}
 	}
-
+//<li ><a   href="'.$this->path.'/article" >Article </a></li>
 	}
 }
 ?>
