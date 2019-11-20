@@ -48,6 +48,7 @@
 			$site->js='tooltipster.bundle.min';
 			$site-> right_sidebar=$site->rempli_right_sidebar();
 			$site-> left_sidebar=$controleur->retourne_formulaire_login();
+			$site-> left_sidebar=$controleur->retourne_modal_message();
 			$site->affiche();
 			break;
 		case 'deconnexion' :

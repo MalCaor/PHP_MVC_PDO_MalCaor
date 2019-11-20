@@ -125,5 +125,19 @@ class mypdo extends PDO{
 
     }
 
+    public function connect($tab){
+      $requete='select * from salarie where login="'.$tab['id'].'" and mp=MD5("'.$tab['mp'].'") and grade='.$tab['categ'].';';
+
+    	$result=$this->connexion ->query($requete);
+    	if ($result)
+    	{
+    		if ($result-> rowCount()==1)
+    		{
+    			return ($result);
+    		}
+    	}
+    	return null;
+    }
+
 }
 ?>
