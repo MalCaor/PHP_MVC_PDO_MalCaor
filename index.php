@@ -2,7 +2,7 @@
 	session_start();
 
 	include_once('class/autoload.php');
-	$site = new page_base();
+	$site = new page_base_securisee_journaliste();
 	$controleur=new controleur();
 	$request = strtolower($_SERVER['REQUEST_URI']);
 	$params = explode('/', trim($request, '/'));
@@ -13,7 +13,7 @@
 	}
 	switch ($params[1]) {
 		case 'accueil' :
-			$site = new page_base('Accueil');
+			$site = new page_base_securisee_journaliste('Accueil');
 			$site-> right_sidebar=$site->rempli_right_sidebar();
 			$site-> slider=$controleur->affiche_slider();
 			$site-> left_sidebar=$controleur->retourne_article($site->titre);
@@ -63,5 +63,6 @@
 			$site->affiche();
 			break;
 	}
+
 
 ?>

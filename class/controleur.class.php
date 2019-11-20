@@ -211,9 +211,10 @@ public function retourne_formulaire_login(){
 
 		return $retour;
 	}
-	
+
 	public function retourne_modal_message()
 	{
+
 		$retour='
 		<div class="modal fade" id="ModalRetour" role="dialog" style="color:#000;">
 			<div class="modal-dialog">
