@@ -117,5 +117,5 @@ $("#myModal").modal("hide");
 }
 function hdModalRetour(){
   $("#ModalRetour").modal("hide") ;
-  document.location.href="index.php";
+  document.location.href="Accueil";
 }
