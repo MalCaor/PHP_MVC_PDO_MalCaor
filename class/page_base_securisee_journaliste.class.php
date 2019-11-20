@@ -12,6 +12,8 @@ class page_base_securisee_journaliste extends page_base {
 		parent::affiche_menu();
 		if (isset($_SESSION['id']) || isset($_SESSION['type']))
 		{
+			if($_SESSION['type'] == "3")
+			{
 		?>
 		<ul>
 			<li><a href="" >Gestion Article</a>
@@ -22,6 +24,7 @@ class page_base_securisee_journaliste extends page_base {
 			</li>
 		</ul>
 		<?php
+		}
 	}
 
 	}
